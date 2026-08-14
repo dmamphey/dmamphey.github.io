@@ -240,6 +240,13 @@ img { max-width: 100%; display: block; }
   color:var(--blue-dark); font-weight:900; font-size:15px;
 }
 .roster-icon { background:linear-gradient(140deg,var(--blue),var(--cyan)); color:white; }
+/* Helix carries its own navy-to-cyan, so the two live tools read as a set
+   without the second one looking like a copy of the first. The label is a word
+   rather than initials, so it needs a smaller type size to sit in the tile. */
+.helix-icon {
+  background:linear-gradient(140deg,var(--blue-dark),var(--cyan));
+  color:white; font-size:12px; letter-spacing:.06em;
+}
 .tool-card h3 { font-size:30px; margin:0 0 5px; color:var(--blue-dark); }
 .tool-subtitle { font-weight:700; color:#36546b !important; }
 .tool-card p { color:var(--muted); margin:10px 0; }
